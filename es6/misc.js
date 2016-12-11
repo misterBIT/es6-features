@@ -1,3 +1,10 @@
+// let p1 = {name: 'Charli Zal'}
+// let pets = [p1, {name: 'Pinchi Zal'}];
+
+// pets.indexOf(p1);
+
+
+
 Array.from(document.querySelectorAll('*')) // Returns a real Array
 Array.of(1, 2, 3);
 
@@ -12,14 +19,24 @@ console.log([1, 2, 3].findIndex(x => x === 2)); // 1
 // ["a", "b", "c"].values(); // iterator "a", "b", "c"
 
 // Object.assign performs shallow copy
-var user1 = {name: "User 1", score: 90, address: { city: 'Tel Aviv', street: 'Nahmani' }};
-var user2 = Object.assign({}, user1);
+var user1 = {
+    name: "User 1",
+    score: 90,
+    address:
+    { city: 'Tel Aviv', street: 'Nahmani' }
+};
+var user2 = Object.assign({}, user1);
 
-user2.height = 175;
-user2.address.street = 'Nordeo';
+user2.height = 175;
+user2.address.street = 'Nordeo';
 
 console.log(user1, user2);
 
-var u1 = {    name: "User 1", score: 90,  address: { city: 'Tel Aviv', street: 'Nahmani' }};
-var u2 = Object.assign({}, u1, {score: 75, address: {street: 'Nordeo'}})
+var u1 = {
+    name: "User 1",
+    score: 90,
+    address: { city: 'Tel Aviv', street: 'Nahmani' }
+};
+var u2 = Object.assign({}, u1, { score: 75, 
+                                address: { street: 'Nordeo' } })
 console.log(u1, u2);

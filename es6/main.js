@@ -5,7 +5,7 @@
 // import * as e from './destructuring.js';
 // import * as f from './default-rest-spread.js';
 // import * as g from './iterators.js';
-// import * as h from './promise.js';
+import * as h from './promise.js';
 // import * as i from './misc.js';
 
 
@@ -16,13 +16,14 @@
 
 // import {sum} from "./module.js";
 // console.log(sum(8, 9));
+
 // import ln, {pi, e} from "./module.js";
 // console.log(ln(10));
 // console.log("2π = " + ln(e)*pi*2);
 
 
-// import Point from './Point.js';
-// var body = document.querySelector('body');
-// body.textContent = 'Good point: ' + new Point(1, 23);
+import Point from './Point.js';
+var body = document.querySelector('body');
+body.innerText = 'Good point: ' + new Point(1, 23);
 
 

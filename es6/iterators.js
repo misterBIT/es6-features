@@ -5,12 +5,13 @@ for(let value of ["a", "b", "c"]){
 // Difference with for-in
 var list = [3, 5, 7];
 list.foo = 'bar';
+console.log(list);
  
-for (var key in list) {
+for (let key in list) {
   console.log(key); // 0, 1, 2, foo
 }
  
-for (var value of list) {
+for (let value of list) {
   console.log(value); // 3, 5, 7
 }
 
@@ -27,6 +28,9 @@ var foo = {
   })
 }
 
+for (var letter of foo) {
+  console.log(letter); 
+}
 for (var letter of foo) {
   console.log(letter); 
 }

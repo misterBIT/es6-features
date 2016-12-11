@@ -1,3 +1,28 @@
+'use strict';
+
+
+var person = {
+      name: 'Muki',
+      age: 19,
+      speak: function() {
+        console.log(this.name + ' Speaking');
+        // var self = this;
+        setTimeout(() => console.log(this.name + ' Speaking'), 1000);
+      }
+    };
+
+person.speak();
+
+
+
+
+
+
+
+
+
+
+
 // Expression bodies
 var nums = [8, 3, 7, 10];
 var odds = nums.filter(n => n % 2);
@@ -18,7 +43,7 @@ nums.forEach(v => {
 var bob = {
   _name: "Bob",
   _friends: ['Puki', 'Muki'],
-  printFriends() {
+  printFriends(promo) {
     this._friends.forEach(f =>
       console.log(this._name + " knows " + f));
   }
